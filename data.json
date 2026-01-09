@@ -1,0 +1,62 @@
+{
+    "name": "Rania Chihaoui",
+    "profession": "Architect / Design Technolgist / Sports&Events Junior Architect",
+    "about": "Architect with 4 years of experience on large-scale international projects, including stadiums and complex public buildings.Background in computational design and Revit-based delivery, from concept development through executive-phase coordination.",
+    "education": [
+        {
+            "dates": "Oct 2025–Presentt",
+            "school": "IAAC, Barcelona, Spain",
+            "degree": "Master in Advanced Computational Design for Architecture",
+            "description": ""
+        },
+        {
+            "dates": "Jun 2025–Sep 2025",
+            "school": "YACademy–Bologna, Italy",
+            "degree": "Higher Education Course: Design Management",
+            "description": "In partnership with ARUP Italia, mentoring 15 selected participants."
+        },
+        {
+            "dates": "2020–2022",
+            "school": "Universidad de Granada – ETSAG, Granada, Spain",
+            "degree": "Master's Degree in Architecture",
+            "description": "<strong>Cum Laude Degree</strong>, first <strong>Tunisian</strong> student to graduate from this program."
+        },
+        {
+            "dates": "2016–2020",
+            "school": "Universidad de Granada – ETSAG, Granada, Spain",
+            "degree": "Bachelor's Degree in Architecture",
+            "description": "Graduation Thesis: <em>\"Adaptive Architecture: Reimagining Public Spaces\"</em>"
+        }
+    ],
+    "experience": [
+        {
+            "position": "Job Title",
+            "company": "Company Name",
+            "duration": "2023 - Present",
+            "description": "Brief description of your role and responsibilities"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Project Name",
+            "role": "Your Role",
+            "date": "2023",
+            "type": "Project Type",
+            "description": "Brief description of the project"
+        }
+    ],
+    "skills": [
+        "Skill 1",
+        "Skill 2",
+        "Skill 3",
+        "Skill 4",
+        "Skill 5"
+    ],
+    "contact": {
+        "email": "your.email@example.com",
+        "phone": "+1 (555) 123-4567",
+        "location": "City, Country",
+        "linkedin": "linkedin.com/in/yourprofile",
+        "github": "github.com/yourprofile"
+    }
+}

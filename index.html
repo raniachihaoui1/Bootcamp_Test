@@ -6,38 +6,180 @@
     <title>My CV</title>
 
     <!-- Google Fonts -->
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=IBM+Plex+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <!-- CV Data embedded as JSON -->
+    <script>
+        const cvData = {
+            "name": "Rania Chihaoui",
+            "profession": "Architect / Design Technolgist / Sports&Events Junior Architect",
+            "about": "Architect with 4 years of experience on large-scale international projects, including stadiums and complex public buildings.Background in computational design and Revit-based delivery, from concept development through executive-phase coordination.",
+            "education": [
+                {
+                    "dates": "Oct 2025–Present",
+                    "school": "IAAC, Barcelona, Spain",
+                    "degree": "Master in Advanced Computational Design for Architecture",
+                    "description": ""
+                },
+                {
+                    "dates": "Jun 2025–Sep 2025",
+                    "school": "YACademy–Bologna, Italy",
+                    "degree": "Higher Education Course: Design Management",
+                    "description": "In partnership with ARUP</strong> Italia, mentoring 15 selected participants."
+                },
+                {
+                    "dates": "2020–2022",
+                    "school": "Universidad de Granada – ETSAG, Granada, Spain",
+                    "degree": "Master's Degree in Architecture",
+                    "description": "<strong>Cum Laude Degree</strong>, Best</strong> grade</strong> final project and first</strong> >Tunisianstudent to graduate from this program."
+                },
+                {
+                    "dates": "2016–2020",
+                    "school": "Universidad de Granada – ETSAG, Granada, Spain",
+                    "degree": "Bachelor's Degree in Architecture",
+                    "description": "Graduation Thesis: <em>\"«InformalSettlements in the Peri-urban Space of the Medina of Tunis: Urban, Socio-Political, and Natural Context»\"</em>"
+                }
+            ],
+            "experience": [
+                {
+                    "position": "Job Title",
+                    "company": "Company Name",
+                    "duration": "2023 - Present",
+                    "description": "Brief description of your role and responsibilities"
+                }
+            ],
+            "projects": [
+                {
+                    "name": "Project Name",
+                    "role": "Your Role",
+                    "date": "2023",
+                    "type": "Project Type",
+                    "description": "Brief description of the project",
+                    "image": "images/projects/01.png"
+                },
+                {
+                    "name": "Project Name",
+                    "role": "Your Role",
+                    "date": "2023",
+                    "type": "Project Type",
+                    "description": "Brief description of the project",
+                    "image": "images/projects/02.png"
+                },
+                {
+                    "name": "Project Name",
+                    "role": "Your Role",
+                    "date": "2023",
+                    "type": "Project Type",
+                    "description": "Brief description of the project",
+                    "image": "images/projects/03.png"
+                },
+            ],
+            "skills": [
+                "Skill 1",
+                "Skill 2",
+                "Skill 3",
+                "Skill 4",
+                "Skill 5"
+            ],
+            "contact": {
+                "email": "your.email@example.com",
+                "phone": "+1 (555) 123-4567",
+                "location": "City, Country",
+                "linkedin": "linkedin.com/in/yourprofile",
+                "github": "github.com/yourprofile"
+            }
+        };
+    </script>
 </head>
 <body>
-    <div class="container">
-        <header class="site-header">
+    <div id="header" class="container">
+        <header class="site-header section">
             <div class="profile">
-                <img src="ppimage.png" alt="Profile photo" class="ppimage">
+                <img src="images/avatar/ppimage.png" alt="Profile photo" class="ppimage">
             </div>
             <div class="header-text">
                 <h1 id="name" class="name">Rania Chihaoui</h1>
-                <p id="profession" class="role">Designer at <strong>Morphosis</strong> &amp; <strong>IDOM</strong></p>
+                <p id="profession" class="role"></p>
                 <p class="location">Barcelona, Spain</p>
             </div>
-        </header>
-
-        <main>
-            <section class="section body-section">
+             <section class="body-section">
                 <div class="body-container">
-                    <p id="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, nisl a facilisis dictum, augue lectus sodales sapien, in dictum urna lorem eu massa. Replace this text with your actual bio or body copy.</p>
+                    <p id="about"></p>
                 </div>
             </section>
-
-            <section class="section nav-section">
+                
+            <section class="nav-section">
                 <div class="body-container">
                     <nav class="page-nav">
-                        <a href="education.html">View Full Education →</a>
+                        <a href="#education">Education</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Contact</a>
                     </nav>
                 </div>
             </section>
+        </header>
+
+        <main>
+            <section id="education"  class="section">
+                  <div class="container">
+                        <h3 class="section-heading">Education</h3>
+                        
+                        <div class="section-content" id="educationList">
+                            <!-- Education items will be populated here by script -->
+                        </div>
+                    </div>
+            </section>
+
+            <section id="experience"  class="section">
+                  <div class="container">
+                        <h3 class="section-heading">Experience</h3>
+                        
+                        <div class="section-content" id="experienceList">
+                            <!-- Experience items will be populated here by script -->
+                        </div>
+                    </div>
+            </section>
+            <section id="projects"  class="section">
+                  <div class="container">
+                        <h3 class="section-heading">Projects</h3>
+                        
+                        <div class="section-content" id="projectsList">
+                            <!-- Projects items will be populated here by script -->
+                        </div>
+                    </div>
+            </section>
+            <section id="skills"  class="section">
+                  <div class="container">
+                        <h3 class="section-heading">Skills</h3>
+                        
+                        <div class="section-content" id="skillsList">
+                            <!-- Skills items will be populated here by script -->
+                        </div>
+                    </div>
+            </section>
+            <section id="contact" class="section">
+                  <div class="container">
+                        <h3 class="section-heading">Contact</h3>
+                        
+                        <div class="section-content" id="contactInfo">
+                            <!-- Contact info will be populated here by script -->
+                        </div>
+                    </div>
+            </section>
         </main>
 
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Rania Chihaoui. All rights reserved.</p>
+        </footer>
+
+        <a id="scrollToTop" class="scroll-to-top" href="#header" title="Back to top">
+            <span>↑</span>
+        </a>
     </div>
 
     <script src="script.js"></script>
