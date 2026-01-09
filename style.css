@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {height:100%;}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'IBM Plex Mono', 'Roboto Mono', monospace;
+    background-color: #ffffff;
+    color: #000;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 32px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-header{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    padding-bottom:24px;
+    border-bottom:1px solid rgba(0,0,0,0.06);
+}
+
+.profile .ppimage{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:1px solid #000;
+    filter:grayscale(100%);
+    display:block;
+}
+
+.header-text{display:flex;flex-direction:column;gap:6px}
+.name{
+    margin:0;
+    font-family:'Playfair Display', serif;
+    font-weight:700;
+    color:#000000;
+    font-size:32px;
+    line-height:1;
+}
+.role{
+    margin:0;
+    font-family:'IBM Plex Mono','Courier New',monospace;
+    font-size:15px;
+    letter-spacing:-0.02em;
+}
+
+.role{white-space:nowrap}
+.role strong{font-weight:700}
+.location{
+    margin:0;
+    font-family:'IBM Plex Mono','Courier New',monospace;
+    font-size:14px;
+    color:#888888;
+    letter-spacing:-0.02em;
+}
+
+.body-container{
+    max-width:600px;
+    margin:36px auto;
+    text-align:left;
+    font-family:'IBM Plex Mono','Roboto Mono',monospace;
+    font-size:14px;
+    line-height:1.5;
+    color:#000;
+}
+
+/* Keep some existing section spacing for other content */
+.section {margin-bottom: 40px}
+
+.page-nav {
+    margin-top: 24px;
+}
+
+.page-nav a {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    transition: opacity 0.2s;
+}
+
+.page-nav a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width:600px){
+    .site-header{flex-direction:row;gap:16px}
+    .profile .ppimage{width:160px;height:160px}
+    .name{font-size:24px}
+    .role{font-size:13px}
+    .container{padding:20px}
+}
