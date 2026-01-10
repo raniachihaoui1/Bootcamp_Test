@@ -55,7 +55,6 @@ function renderCV() {
                 <span class="location">${exp.company || ''}</span>
             </div>
             <div class="section-school">${exp.position || ''}</div>
-            <div class="section-degree">${exp.company || ''}</div>
             <div class="section-description">${exp.description || ''}</div>
         `;
         experienceList.appendChild(expItem);
